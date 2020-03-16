@@ -10,12 +10,22 @@ body {
     font-weight: 400;
     color: #121212;
     letter-spacing: -1px;
+
+
+
 }
 
+
+
+ /* .post-title-holder{
+    background-color: blue;
+}  */
+/* ovde boja clova */
 body a {
     text-decoration: none;
-    color: #121212;
+    color: #FAF8F3 !important;
 }
+
 
 body a,
 body input,
@@ -32,6 +42,10 @@ body button {
 body a:hover {
     color: #aaa6a0;
 }
+
+/* body a {
+    color: white;
+} */
 
 .queryloader__overlay__bar {
     top: 0 !important;
@@ -78,7 +92,7 @@ blockquote {
     font-family: 'Montserrat', sans-serif, Arial;
     font-size: 24px;
     line-height: 47px;
-    color: #b5b5b5;
+    color: #FAF8F3;
     position: relative;
     z-index: 2;
 }
@@ -262,7 +276,7 @@ blockquote:before {
 }
 
 .blog-item-holder .only-post-title-holder {
-    background-color: #3A3A37;
+    background-color: #dee6580d;
     padding: 100px 100px 80px 100px;
 }
 
@@ -330,19 +344,21 @@ body.blog .more-posts {
 }
 
 /* BLOG */
-
+/* ovde */
 .blog-item-holder {
-    background-color: #ffffff;
+    background-color: #291c1c75 !important;
     -webkit-transition: background 0.5s ease;
     -moz-transition: background 0.5s ease;
     -ms-transition: background 0.5s ease;
     -o-transition: background 0.5s ease;
     transition: background 0.5s ease;
+
 }
 
 .blog-item-holder .post-thumb {
     font-size: 0;
     line-height: 0;
+
 }
 
 .blog-item-holder .post-thumb img {
@@ -353,11 +369,11 @@ body.blog .more-posts {
 .blog-top-content {
     margin-bottom: 170px;
 }
-
-.blog-item-holder .post-title-holder {
-    background-color: white;
-}
-
+/* ovde */
+/* .blog-item-holder .post-title-holder {
+     background-color: #291c1c75; 
+} 
+*/
 .blog-item-holder .post-title-holder.one_title {
     top: 0;
     left: 0;
@@ -947,18 +963,13 @@ li.left-footer-content.mobile {
 /* RESPONSIVE PART */
 #bg {
     max-width: 100% !important;
-    
+
 }
 
 @media screen and (max-width: 3900px) {
     .header-image img {
         width: 100%;
-        
     }
-
-
-
-
 }
 
 @media screen and (max-width: 1400px) {
