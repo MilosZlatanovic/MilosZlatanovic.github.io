@@ -11,7 +11,10 @@ body {
     color: #121212;
     letter-spacing: -1px;
 
-
+    background-image: url("images/back-ground.jpg");
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-size: 100% 100%;
 
 }
  /* My style */
@@ -26,13 +29,10 @@ body {
     }
 
     /* Android */
-    #imageback {
-        background-image: url("/images/back-ground.jpg");
-        /* background-repeat: no-repeat; */
-        background-attachment: fixed;
-        background-size: 100% 100%;
+    /* #imageback {
+        
 
-    }
+    } */
 
     .button {
         background-color: #464639;
