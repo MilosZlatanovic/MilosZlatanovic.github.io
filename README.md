@@ -1,2 +1,2 @@
 # MilosZlatanovic.github.io
-Game Prtfolio website
+Games Portfolio website
