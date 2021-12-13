@@ -26,8 +26,20 @@
     <link rel="stylesheet" type="text/css" href='css/carouFredSel.css' />
     <link rel="stylesheet" type="text/css" href='css/sm-clean.css' />
     <link rel="stylesheet" type="text/css" href='style.css' />
-
+ 
     <!--Live Chat-->
+     <!--
+    <script>
+        function initFreshChat() {
+          window.fcWidget.init({
+            token: "8defec88-5b79-4d82-bfa5-77fc7d86bd0d",
+            host: "https://wchat.eu.freshchat.com"
+          });
+        }
+        function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.eu.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk Messaging-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+      </script>
+    -->
+    <!--
     <script src="https://www.momentcrm.com/embed"></script>
     <script>
         MomentCRM('init', {
@@ -35,7 +47,8 @@
             'doChat': true,
             'doTracking': true,
         });
-    </script>
+        </script>
+        -->
 
     <!--[if lt IE 9]>
                 <script src="js/html5.js"></script>
@@ -131,6 +144,38 @@
 </style>
 
 <body id="imageback" class="home blog">
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "103460938193693");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
     <div class="doc-loader"></div>
     <div id="bg" class="content-1170 header-holder center-relative">
 
